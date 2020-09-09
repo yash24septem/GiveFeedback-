@@ -1,0 +1,49 @@
+extends base.pug 
+block scripts 
+  script(src='/static/index.js')
+
+block style
+    style
+       include ../static/style.css  
+
+block content
+     
+    section#introSection
+          div Welcome to the world of Yash
+          div.small eat sleep play guitar repeat
+
+    section#sponsorSection    
+        
+      h2 our sponsors
+      div#sponsors
+          img(src="/static/spon1.jpg",alt="sponsor image",class="sp")
+          img(src="/static/spon2.png",alt="sponsor image",class="sp")
+          img(src="/static/spon3.png",alt="sponsor image",class="sp")  
+    section#missionSection    
+        
+        h2 my missions  
+        div.card 
+         h3 barre chords
+         div.card-box
+            div.card-img
+                img(src="/static/stic1.png")
+
+            div.card-content 
+                p Play instrument by heart    
+        div.card 
+         h3 fingerstyle
+         div.card-box
+            div.card-img
+                img(src="/static/stic2.jpg")
+
+            div.card-content 
+                p Play instrument by heart 
+        div.card 
+         h3 power chords  
+         div.card-box
+            div.card-img
+                img(src="/static/stic3.jpg")
+
+            div.card-content 
+                p Play instrument by heart 
+

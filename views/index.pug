@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+
+    title Yashian Company
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+              div#logo 
+                  img(src="/static/logo.png")
+                  | YashianLand
+              li #[a(href="/") Home]
+              li #[a(href="/") About     ]       
+              li #[a(href="/") Services  ]      
+              li #[a(href="/") Gallery   ]   
+              li #[a(href="/") Contact Us] 
+    section#introSection
+          div Welcome to the world of Yash
+          div.small eat sleep play guitar repeat
+
+    section#sponsorSection    
+        
+      h2 our sponsors
+      div#sponsors
+          img(src="/static/spon1.jpg",alt="sponsor image",class="sp")
+          img(src="/static/spon2.png",alt="sponsor image",class="sp")
+          img(src="/static/spon3.png",alt="sponsor image",class="sp")  
+    section#missionSection    
+        
+        h2 my missions  
+        div.card 
+         h3 barre chords
+         div.card-box
+            div.card-img
+                img(src="/static/stic1.png")
+
+            div.card-content 
+                p Play instrument by heart    
+        div.card 
+         h3 fingerstyle
+         div.card-box
+            div.card-img
+                img(src="/static/stic2.jpg")
+
+            div.card-content 
+                p Play instrument by heart 
+        div.card 
+         h3 power chords  
+         div.card-box
+            div.card-img
+                img(src="/static/stic3.jpg")
+
+            div.card-content 
+                p Play instrument by heart 
+
+    footer#footer
+        | copyright 2020 YashianCompany. All rights reserved.  
+    script
+      include ../static/index.js
